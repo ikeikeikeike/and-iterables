@@ -27,5 +27,5 @@ pytest-one:  develop  ## Running tox
 
 
 .PHONY: pytest
-pytest:  develop  ## Running tox
+pytest:  develop  ## Running tox on parallel
 	poetry run tox --parallel

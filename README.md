@@ -1,4 +1,4 @@
-## and itertools
+## and iterables
 
 ## License
 
