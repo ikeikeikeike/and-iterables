@@ -8,6 +8,9 @@ use crate::free::*;
 fn and_itertools(_py: Python, m: &PyModule) -> PyResult<()> {
     m.add("__version__", env!("CARGO_PKG_VERSION"))?;
     m.add_wrapped(wrap_pyfunction!(all))?;
+    m.add_wrapped(wrap_pyfunction!(any))?;
+    m.add_wrapped(wrap_pyfunction!(max))?;
+    m.add_wrapped(wrap_pyfunction!(join))?;
 
     Ok(())
 }
