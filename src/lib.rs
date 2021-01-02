@@ -11,6 +11,7 @@ fn and_itertools(_py: Python, m: &PyModule) -> PyResult<()> {
     m.add_wrapped(wrap_pyfunction!(any))?;
     m.add_wrapped(wrap_pyfunction!(max))?;
     m.add_wrapped(wrap_pyfunction!(join))?;
+    m.add_wrapped(wrap_pyfunction!(sorted))?;
 
     Ok(())
 }
